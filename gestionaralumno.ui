@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gestionarAlumno</class>
+ <widget class="QDialog" name="gestionarAlumno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gestor Alumnos</string>
+  </property>
+  <widget class="QFrame" name="editAlumno">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>320</y>
+     <width>800</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="labelNombre">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Nombre y apellidos&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNombre">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>371</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="placeholderText">
+     <string>Nombre y apellidos</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtTelefono">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>50</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Telefono</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelTelefono">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Telefono&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelEmail">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>160</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Email&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtemail">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>50</y>
+      <width>160</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>191</red>
+          <green>191</green>
+          <blue>191</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fecha ordinaria</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>80</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fecha Extraordinaria</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnNuevo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>510</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancelar">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>510</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnModificar">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>510</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAcpetar">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>510</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBorrar">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>510</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Borrar</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableAlumno">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>30</y>
+     <width>841</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <column/>
+   <column/>
+  </widget>
+  <zorder>tableAlumno</zorder>
+  <zorder>editAlumno</zorder>
+  <zorder>btnNuevo</zorder>
+  <zorder>btnCancelar</zorder>
+  <zorder>btnModificar</zorder>
+  <zorder>btnAcpetar</zorder>
+  <zorder>btnBorrar</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>btnCancelar</tabstop>
+  <tabstop>btnAcpetar</tabstop>
+  <tabstop>btnNuevo</tabstop>
+  <tabstop>btnModificar</tabstop>
+  <tabstop>btnBorrar</tabstop>
+  <tabstop>tableAlumno</tabstop>
+  <tabstop>txtNombre</tabstop>
+  <tabstop>txtTelefono</tabstop>
+  <tabstop>txtemail</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnNuevo</sender>
+   <signal>clicked()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>nuevo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>14</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnModificar</sender>
+   <signal>clicked()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>modificar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>526</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnBorrar</sender>
+   <signal>clicked()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>borrar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>529</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnAcpetar</sender>
+   <signal>clicked()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>aceptar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>629</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCancelar</sender>
+   <signal>clicked()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>cancelar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>773</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>757</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableAlumno</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>gestionarAlumno</receiver>
+   <slot>showLabel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>104</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>selectOwner()</slot>
+  <slot>selectOficina()</slot>
+  <slot>nuevo()</slot>
+  <slot>modificar()</slot>
+  <slot>borrar()</slot>
+  <slot>aceptar()</slot>
+  <slot>cancelar()</slot>
+  <slot>showLabel()</slot>
+ </slots>
+</ui>
